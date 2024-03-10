@@ -1,0 +1,132 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-image: url(./images/old-paper-texture.png);
+
+   font-family: "Source Serif 4", sans-serif;
+   color: #A54328;
+}
+
+main {
+   max-width: 20rem;
+
+   display: flex;
+   flex-direction: column;
+   gap: 2.8125rem;
+
+   margin-inline: auto;
+   padding: 3.125rem 2.1875rem;
+
+   box-sizing: content-box;
+}
+
+.left {
+   display: flex;
+   flex-direction: column;
+   gap: 2.8125rem;
+}
+
+.left h1,
+.right h2 {
+   font-size: 1.75rem;
+}
+
+.right h2 {
+   margin-bottom: 1.5625rem;
+}
+
+.right h3:last-of-type {
+   margin-top: .9375rem;
+}
+
+.left p,
+.right h3,
+.right li {
+   font-size: .875rem;
+   line-height: 1.125rem;
+}
+
+.right ol {
+   padding-left: .9375rem;
+}
+
+.right ul {
+   padding-left: 1.125rem;
+}
+
+.right button {
+   background: #A54328;
+
+   margin-top: 2.1875rem;
+   padding: .4375rem .75rem;
+
+   font-size: .5625rem;
+   font-weight: 500;
+   font-family: "Source Serif 4", sans-serif;
+   line-height: 1rem;
+   color: #fff;
+
+   border: none;
+   border-radius: .3125rem;
+}
+
+.right button:hover {
+   cursor: pointer;
+   background: #b4492c;
+}
+
+.right button:active {
+   transform: scale(.95);
+   background: #9e4027;
+}
+
+@media (min-width: 64rem) {
+   main {
+      max-width: fit-content;
+
+      padding-block: 5.9375rem;
+
+      flex-direction: row;
+      gap: 11.5625rem;
+   }
+
+   main div:nth-child(1) {
+      max-width: 27.1875rem;
+   }
+
+   main div:nth-child(2) {
+      max-width: 32.8125rem;
+   }
+
+   .left h1,
+   .right h2 {
+   font-size: 2.5rem;
+   line-height: 3.125rem
+   }
+
+   .left p,
+   .right h3,
+   .right li {
+   font-size: 1.25rem;
+   line-height: 1.5625rem;
+   }
+
+   .right ol {
+      padding-left: 22px;
+   }
+   
+   .right ul {
+      padding-left: 23px;
+   }
+
+   .right button {
+      font-size: .875rem;
+      line-height: 1.5rem;
+
+      padding: .625rem 1.25rem;
+   }
+}
